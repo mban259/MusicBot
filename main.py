@@ -86,7 +86,7 @@ async def leave(ctx: commands.Context):
 async def start(ctx: commands.Context, name: str):
     await reaction.send_processing(ctx)
     cli: discord.VoiceClient = get_voice_client()
-    if os.path.isfile("data/music/{}".format(name)):
+    if not os.path.isfile("data/music/{}".format(name)):
         raise FileNotFoundError()
     cli.play(discord.FFmpegPCMAudio("data/music/{}".format(name)), after=lambda e: print(e))
     await reaction.send_done(ctx)
