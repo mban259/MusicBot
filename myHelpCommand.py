@@ -19,7 +19,7 @@ class myHelpCommand(commands.MinimalHelpCommand):
                            "resume: 再開するよ!\n"
                            "leave: VoiceChannelから出るよ!\n"
                            "list: ファイルを表示するよ!\n"
-                           "delete: \"filename\": filenameを削除するよ!\n"
+                           "delete \"filename\": filenameを削除するよ!\n"
                            "help: へるぷ!\n"
                            "DMにファイルを貼ればアップロードできるよ!\n"
                            "\"コメントを追加\"でファイル名指定ができるよ!\n"
